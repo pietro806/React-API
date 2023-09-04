@@ -1,0 +1,80 @@
+- inserir cliente
+
+post '/cliente'    (200)
+
+req body
+
+resp cliente + id
+
+------------------------------------
+
+- buscar cliente por nome
+
+get '/cliente/buscar?nome=teste'    (200)
+
+req query nome
+
+resp clientes retornados
+
+------------------------------------
+
+- alterar cliente
+
+put '/cliente/:id'    (204)
+
+req body 
+req params id
+
+resp 'cliente alterado'
+
+------------------------------------
+
+- remover cliente
+
+delete '/cliente/:id'    (204)
+
+req params id
+
+resp 'cliente deletado'
+
+------------------------------------
+
+- inserir veiculo
+
+post '/veiculo'    (200)
+
+req  body
+
+resp veiculo + id
+
+------------------------------------
+
+- buscar veiculo por modelo, marca ou placa
+
+get '/veiculo?nome=teste'    (200)
+
+req  query nome
+
+resp veiculos encontrados
+
+
+------------------------------------
+
+- alterar veiculo
+
+put '/veiculo/:id'    (204)
+
+req  body,
+req  params id
+
+resp ''
+
+------------------------------------
+
+- deletar veiculo
+
+delete '/veiculo/:id'    (204)
+
+req  params   id
+
+resp 'veiculo deletado'
